@@ -16,7 +16,10 @@ function App() {
     })();
   });
 
-  return <div>{data} from {user}</div>;
+  return <div>
+    {data} from {user}
+    <a class="btn btn-primary" href="/.auth/logout?post_logout_redirect_uri=/login.html" role="button">Logout</a>
+    </div>;
 }
 
 export default App;
