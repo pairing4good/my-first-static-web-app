@@ -11,12 +11,12 @@ function App() {
     })();
 
     (async function () {
-      const { text } = await( await fetch(`/.auth/me`)).json();
-      setUser(text);
+      const { clientPrincipal } = await( await fetch(`/.auth/me`)).json();
+      setUser(clientPrincipal.userDetails);
     })();
   });
 
-  return <div>{data} from {user.clientPrincipal}</div>;
+  return <div>{data} from {user}</div>;
 }
 
 export default App;
