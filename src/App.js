@@ -16,7 +16,7 @@ function App() {
     })();
   });
 
-  return <div>{data} from {user.clientPrincipal.userDetails}</div>;
+  return <div>{data} from {user.clientPrincipal}</div>;
 }
 
 export default App;
