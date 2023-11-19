@@ -1,6 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/.auth/login/github"
+    "rewrite": "/login.html"
   },
   "routes": [
     {
