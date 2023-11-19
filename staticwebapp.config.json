@@ -7,5 +7,10 @@
           "route": "/*",
           "allowedRoles": ["authenticated"]
         }
-    ]
+    ],
+    "responseOverrides": {
+        "401": {
+          "rewrite": "/login.html"
+        }
+      }
 }
