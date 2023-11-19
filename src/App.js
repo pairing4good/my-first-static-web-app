@@ -12,7 +12,7 @@ function App() {
 
     (async function () {
       const { clientPrincipal } = await( await fetch(`/.auth/me`)).json();
-      setUser(clientPrincipal.userDetails);
+      setUser(clientPrincipal ? clientPrincipal.userDetails : "");
     })();
   });
 
