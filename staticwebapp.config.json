@@ -15,5 +15,9 @@
       "statusCode": 302,
       "redirect": "/.auth/login/github"
     }
+  },
+  "globalHeaders": {
+    "Access-Control-Allow-Origin": "*",
+    "Access-Control-Allow-Methods": "GET, POST, PUT"
   }
 }
